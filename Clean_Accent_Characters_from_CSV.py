@@ -39,7 +39,7 @@ lowerZ = ["ž"]
 # create a empty dictionary
 masterDict = {}
 
-# build the dictionary
+# build the dictionary using a reverse lookup
 masterDict.update({_: "A" for _ in upperA})
 masterDict.update({_: "a" for _ in lowerA})
 masterDict.update({_: "C" for _ in upperC})
