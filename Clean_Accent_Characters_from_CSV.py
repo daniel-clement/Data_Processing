@@ -1,17 +1,17 @@
 # This script was written by Daniel Clement - 2022
 # Python 3
 """
-This script will take an input CSV file, look through it for any of the characters with accents as listed below,
+This script will take an input CSV file, search for any of characters with accents, as listed below,
 and perform a find and replace for each of them to normal/non-accent characters.
 """
 
 # set parameters
 #######################################################################################################################
 # input CSV
-inCsv = r"O:\Analytics\Useful_Resources\TOOLS\Scripts\AIS_Tools\AIS_Country_Codes.csv"
+inCsv = r"C:\data\example.csv"
 
 # output CSV
-outCsv = r"O:\Analytics\Useful_Resources\TOOLS\Scripts\AIS_Tools\AIS_Country_Codes_Cleaned.csv"
+outCsv = r"C:\data\example_cleaned.csv"
 #######################################################################################################################
 
 # make lists of accent characters
