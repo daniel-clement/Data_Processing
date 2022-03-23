@@ -12,7 +12,7 @@ from glob import glob
 # set input parameters
 #######################################################################################################################
 # the folder where the GeoJSON's are located
-inDir = r"C:\Data\Example_Folder"
+inDir = r"C:\Data\folder_with_jsons"
 #######################################################################################################################
 
 # create list of all GeoJSON files in the input folder
