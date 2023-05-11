@@ -8,6 +8,7 @@
 # do imports
 from qgis.core import *
 from glob import glob
+from tqdm import tqdm
 
 # set input parameters
 #######################################################################################################################
@@ -26,10 +27,7 @@ else:
     exit()
 
 # loop through each geojson in inFiles and convert to a csv
-for f, file in enumerate(inFiles, start=1):
-    # Print completion progress number
-    countValue = ("%s of %s"%(f, len(inFiles)))
-    print("\n" + countValue)
+for file in tqdm(inFiles, desc="Converting GeoJSONs to CSV"):
 
     # create the output CSV name/path
     outCsv = file.replace(".geojson", "_Qgis.csv")
@@ -47,6 +45,7 @@ for f, file in enumerate(inFiles, start=1):
                                             )
 
     print("GeoJSON successfully converted!")
+
 
 # get number of files processed
 numInFiles = len(inFiles)
