@@ -1,12 +1,11 @@
 # this script was written by Daniel Clement - 2022
 """
 This script uses qgis to convert a GeoJSON to a CSV file.
-Only works for point data.
+Only works for point data. Requires QGIS to be installed
+
+Use the QGIS interpreter at: "C:\Program Files\QGIS 3.14\bin\python-qgis.bat"
+Written for QGIS 3.14.5
 """
-
-
-# use the QGIS interpreter at: "C:\Program Files\QGIS 3.14\bin\python-qgis.bat"
-# written for QGIS 3.14.5
 
 # do imports
 from qgis.core import *
